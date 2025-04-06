@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NGUYỄN THỊ HƯNG - Trang Chủ Bình Dương</title>
+  <title>NGUYỄN THỊ HƯNG - Trang Chủ</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Space+Grotesk:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Space Grotesk', sans-serif;
-      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
       color: #000;
       text-align: center;
-      overflow-x: hidden;
     }
 
     header {
-      background: #ff4081;
+      background: #007bff;
       color: white;
       padding: 40px 10px 20px;
       font-size: 32px;
-      font-family: 'Rubik Glitch', cursive;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .language-switcher {
@@ -34,43 +33,37 @@
     }
 
     .language-switcher button {
-      padding: 5px 10px;
-      font-size: 12px;
-      border: none;
+      padding: 6px 12px;
+      font-size: 13px;
+      border: 1px solid #ccc;
       border-radius: 4px;
-      background: #222;
-      color: white;
+      background: #f8f9fa;
       cursor: pointer;
-      font-family: 'Space Grotesk', sans-serif;
     }
 
     nav {
-      margin-top: 50px;
+      margin-top: 40px;
     }
 
     nav a {
       display: inline-block;
-      margin: 15px 20px;
-      font-size: 18px;
-      color: #000;
+      margin: 10px 15px;
+      font-size: 17px;
+      color: #007bff;
       text-decoration: none;
-      background: #00e5ff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
-      font-family: 'Space Grotesk', sans-serif;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
 
     nav a:hover {
-      transform: scale(1.1) rotate(-2deg);
-      background: #00bcd4;
+      background: #e9ecef;
     }
 
     .footer {
       margin-top: 60px;
-      font-size: 10px;
-      color: #444;
+      font-size: 12px;
+      color: #555;
     }
 
     .footer img {
@@ -80,15 +73,9 @@
     }
 
     .bd-mode {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 16px;
-      animation: boom 2s infinite alternate;
-      font-family: 'Rubik Glitch', cursive;
-    }
-
-    @keyframes boom {
-      0% { transform: scale(1) rotate(0deg); color: #ff1744; }
-      100% { transform: scale(1.2) rotate(2deg); color: #651fff; }
+      font-style: italic;
     }
   </style>
 </head>
@@ -110,7 +97,7 @@
     <a href="#">SHOP</a>
   </nav>
 
-  <div class="bd-mode" id="bd-mode">Chế độ Bình Dương đang hoạt động!!! 💥💣🐔</div>
+  <div class="bd-mode" id="bd-mode">Chế độ Bình Dương đang hoạt động</div>
 
   <div class="footer">
     <h6>Made with Abc's Noob
@@ -124,13 +111,13 @@
     function setLanguage(lang) {
       const text = {
         vi: {
-          bd: 'Chế độ Bình Dương đang hoạt động!!! 💥💣🐔',
+          bd: 'Chế độ Bình Dương đang hoạt động',
         },
         en: {
-          bd: 'Binh Duong Mode Activated!!! 💥💣🐔',
+          bd: 'Binh Duong Mode is active',
         },
         bd: {
-          bd: 'Dô chế độ BÌNH DƯƠNG nhen mấy cưng!!! 🔥🍍😎',
+          bd: 'Đã bật mode BÌNH DƯƠNG, bình thường thôi nhen!',
         },
       };
       document.getElementById('bd-mode').innerText = text[lang].bd;
